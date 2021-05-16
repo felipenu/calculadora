@@ -1,0 +1,6 @@
+var valor = document.getElementById('valor1').value;
+var quantidadePessoas = parseInt(valor * 30);
+var cliques = parseInt(quantidadePessoas * 12 / 100);
+var compartilhamentos = parseInt(cliques * 3 / 20);
+var novaVisualizacoes = compartilhamentos > 4 ? (40 * 4) : (compartilhamentos * 40);
+var totalVisualizacoes = quantidadePessoas + novaVisualizacoes;
